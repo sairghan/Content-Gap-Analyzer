@@ -42,7 +42,7 @@ def analyze_gap(keyword, market_data, competitor_data):
     return llm.invoke(prompt).content
 
 # --- UI ---
-st.title("🔍 SEO Content Gap Analyzer")
+st.title("🔍 Competitor Content Gap Analyzer")
 col1, col2 = st.columns(2)
 
 with col1:
