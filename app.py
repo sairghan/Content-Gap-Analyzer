@@ -4,7 +4,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import os
 
 # --- Configuration ---
-st.set_page_config(page_title="SEO Content Gap Analyzer", page_icon="🔍", layout="wide")
+st.set_page_config(page_title="Competitor Content Gap Analyzer", page_icon="🔍", layout="wide")
 os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 tavily = TavilyClient(api_key=st.secrets["TAVILY_API_KEY"])
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
